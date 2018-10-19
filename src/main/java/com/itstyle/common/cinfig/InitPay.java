@@ -1,4 +1,4 @@
-package com.itstyle.common.config;
+package com.itstyle.common.cinfig;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
