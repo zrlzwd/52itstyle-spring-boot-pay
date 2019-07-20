@@ -10,7 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 创建者 小柒2012
  * 创建时间 2019年7月20日
  * 启动   java -jar spring-boot-pay.jar --server.port=8886 
- * linux 下 后台启动  nohup java -jar spring-boot-pay.jar --server.port=8886 & 
+ * linux 下 后台启动  nohup java -jar spring-boot-pay.jar --server.port=8886 &
+ * 注册中心地址：http://47.104.197.9:8848/nacos/
  */
 @EnableDubbo
 @SpringBootApplication
