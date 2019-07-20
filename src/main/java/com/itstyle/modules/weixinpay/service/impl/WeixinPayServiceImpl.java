@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import net.sf.json.JSONObject;
 
 import org.slf4j.Logger;
@@ -24,7 +25,7 @@ import com.itstyle.modules.weixinpay.util.HttpUtil;
 import com.itstyle.modules.weixinpay.util.PayCommonUtil;
 import com.itstyle.modules.weixinpay.util.XMLUtil;
 
-@Component
+@Service(group = "itstyle-nacos", retries = 1, timeout = 10000)
 public class WeixinPayServiceImpl implements IWeixinPayService {
 	private static final Logger logger = LoggerFactory.getLogger(WeixinPayServiceImpl.class);
 	

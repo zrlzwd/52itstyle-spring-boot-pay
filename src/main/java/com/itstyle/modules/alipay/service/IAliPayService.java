@@ -8,7 +8,6 @@ import com.itstyle.common.model.Product;
  * 创建者 科帮网
  * 创建时间	2017年7月27日
  */
-@Service
 public interface IAliPayService {
 	/**
 	 * 阿里支付预下单

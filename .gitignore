@@ -11,4 +11,5 @@
 /.idea/
 *.project
 *.classpath
+*.properties
 spring-boot-pay.iml

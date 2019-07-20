@@ -3,6 +3,7 @@ package com.itstyle.modules.unionpay.service.impl;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,7 +17,8 @@ import com.itstyle.modules.unionpay.service.IUnionPayService;
 import com.itstyle.modules.unionpay.util.AcpService;
 import com.itstyle.modules.unionpay.util.SDKConfig;
 import com.itstyle.modules.unionpay.util.UnionConfig;
-@Component
+
+@Service(group = "itstyle-nacos", retries = 1, timeout = 10000)
 public class UnionPayServiceImpl implements IUnionPayService{
 	private static final Logger logger = LoggerFactory.getLogger(UnionPayServiceImpl.class);
 	

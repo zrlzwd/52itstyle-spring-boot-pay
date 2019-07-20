@@ -3,6 +3,7 @@ package com.itstyle.modules.alipay.service.impl;
 import java.io.File;
 import java.util.Map;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import net.sf.json.JSONObject;
 
 import org.apache.commons.lang3.StringUtils;
@@ -62,7 +63,7 @@ import com.itstyle.modules.alipay.util.AliPayConfig;
  * 支付宝建议加签方式升级为RSA(SHA256)密钥，以为 SHA 貌似已经被破解了。
  * 
  */
-@Component
+@Service(group = "itstyle-nacos", retries = 1, timeout = 10000)
 public class AliPayServiceImpl implements IAliPayService {
 	private static final Logger logger = LoggerFactory.getLogger(AliPayServiceImpl.class);
 	
